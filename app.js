@@ -13,7 +13,7 @@ app.use(express.static("public"));
 
 
 // Mongoose setup start
-mongoose.connect("mongodb+srv://admin-minhaz:Test123@cluster0.uotfc.mongodb.net/todoListDB");
+mongoose.connect(mongoUrl)
 const itemsSchema = new Schema({
   title: String
 });
